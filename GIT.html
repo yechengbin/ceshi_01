@@ -53,11 +53,26 @@
     <p>git status --short</p>
 
 
+    <!-- 跟踪文件--放入暂存区 -->
     <!--跟踪新文件index.htm -->
-    <!-- 文件被放入暂存区 -->
     <p>git add index.html</p>
     <!-- 跟踪目录下所有文件 -->
     <p>git add .</p>
+
+    <!-- 提交更新-- 提交到仓库 -->
+    <p>git commit -m "新建了index.html 文件"</p>
+    <!-- 修改过的、没有放入暂存区的文件前面有红色的 **M** 标记。 -->
+    <!-- modified:   GIT.html -->
+
+
+    <!-- $ git init                          (创建Git本地目录)
+            $ git add .                      (提交到暂存区)
+            $ git commit -m “第一次添加”     (提交到本地仓库)
+            $ git log --oneline              (简略版的记录)
+            $ git add .                         
+            $ git commit -m “第二次添加”
+            $ git remote add origin git@gitee.com:yechengbin/lianxi519.git -->
+
 </body>
 
 </html>
