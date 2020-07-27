@@ -64,12 +64,17 @@
     <!-- 修改过的、没有放入暂存区的文件前面有红色的 **M** 标记。 -->
     <!-- modified:   GIT.html   (红色) -->
 
-
     <!-- $ git init                          (创建Git本地目录)
             $ git add .                      (提交到暂存区)
             $ git commit -m “第一次添加”     (提交到本地仓库)
             $ git log --oneline              (简略版的记录)
-            $ git add .                         
+            $ git add index.html               
+            $ git reset HEAD index.html      (将index.html从暂存区移出) 
+            $ git status                      (查看状态)   红M   工作区的文件--提交过,然后修改后的文件  
+                                                           绿M   暂存区的文件--之前已经提交过
+                $ git add 新文件的名字                      绿A   第一次提交到暂存区的文件
+                                                           ？？  工作区的新文件   
+                git rm --cached 文件名                     绿D   文件从仓库移除，保留到工作区，？？是新的文件     
             $ git commit -m “第二次添加”
             $ git remote add origin git@gitee.com:yechengbin/lianxi519.git -->
 
